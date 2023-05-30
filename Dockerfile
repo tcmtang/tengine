@@ -5,6 +5,7 @@ ENV TENGINE_VERSION 2.4.0
 
 # nginx: https://git.io/vSIyj
 
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN rm -rf /var/cache/apk/* && \
     rm -rf /tmp/*
 
