@@ -56,6 +56,7 @@ ENV CONFIG "\
         --add-module=modules/ngx_http_upstream_check_module \
         --add-module=modules/headers-more-nginx-module-0.33 \
 	--add-module=modules/ngx_http_upstream_session_sticky_module \
+	--add-module=./modules/ngx_http_proxy_connect_module \
         "
 RUN     addgroup -S nginx \
         && adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx \
